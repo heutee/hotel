@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="hotel-california.css" />
+	<title>HOTEL CALIFORNIA</title>
+</head>
+<body>
+<div id="header">
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hotel California</h1>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Such a lovely place</h3>
+</div>
+<div class="nav-buttons"><a href="home"><div class="nav-buttons">HOME</div></a></div>
+<div class="nav-buttons"><a href="about"><div class="nav-buttons">ABOUT</div></a></div>
+<div class="nav-buttons"><a href="rooms"><div class="nav-buttons">ROOMS</div></a></div>
+<div class="nav-buttons"><a href="form"><div class="nav-buttons">RESERVE</div></a></div>
+<br/><br/>
+<div class="hr"></div>
+<br/>
+<br/>
+<h3>Reserve a room</h3>
+<center>
+	<form method="POST" action="/form_results">
+		First name: <input type="text" name="firstName">
+		<br/>Last name: <input type="text" name="lastName">
+		<br/>Contact number: <input type="text" name="contactNum">
+		<br/>E-mail: <input type="text" name="email">
+		<br/>Date of Reservation: <input type="date" name="startingDate">
+		<br/>Number of days starying: <input type="int" name="numDays">
+		<br/>Room type: <select name="type" for="type">
+			<option value="single">Single</option>
+			<option value="double">Double</option>
+			<option value="family">Family</option>
+		</select>
+		<br/><input type="submit" value="Submit">
+	</form>
+<p class="lyrics">Last thing I remember:  
+<br/>I was running for the door. 
+<br/>I had to find the passage back to the place I was before.
+<br/>'Relax,' said the night man, 
+<br/>'We are programmed to receive. 
+<br/>'You can check out any time you like,'
+<br/>(But you can never leave)</p>
+</center>
+<div id="footer">Hotel California (c) The Eagles</div>
+</body>
+</html>
