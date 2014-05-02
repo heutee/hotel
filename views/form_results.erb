@@ -19,7 +19,8 @@
 <br/>
 <h1>Room reserved!</h1>
 <center>
-	<p><%= @room.occupado %></p>
+	<p>Customer: <%= @room.first_name %> <%= @room.last_name %></p>
+	<p>You reserved a <%= @room.room_type %> room for <%= @room.days %> days starting on <%= @room.date %>. We will contact you at your given contact information (<%= @room.contact_num %>, <%= @room.email %>) should anything come up. Thank you for choosing to stay in Hotel California."</p>
 	<p class="lyrics">""You can check out any time you like,
 <br/>(But you can never leave)"</p>
 </center>
