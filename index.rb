@@ -13,8 +13,8 @@ class Room
 	attr_reader :date
 	attr_writer :days
 	attr_reader :days
-	attr_writer :room
-	attr_reader :room
+	attr_writer :room_type
+	attr_reader :room_type
 	
 	def initialize(first_name, last_name, contact_num, email, date, days, room_type)
 		@first_name = first_name
